@@ -1,0 +1,162 @@
+/* 1. BITTER FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
+
+/* GRUNDSTYLING */
+body {
+    /* Bitter als Hauptschriftart, gefolgt von der generischen Serifenschrift als Fallback */
+    font-family: 'Bitter', serif; 
+    
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* CONTAINER ZUR ZENTRIERUNG UND MAX. BREITE */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Maximale Seitenbreite */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* A. HEADER STYLING */
+header {
+    background-color: #007bff;
+    background-image: linear-gradient(to right, #00A2DF, #0072B3);
+    color: white;
+    padding: 10px 0;
+    border-bottom: 5px solid #0056b3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em; /* Kleinere Schrift auf Mobilgeräten */
+    text-align: center;
+}
+
+/* Navigation (Standard: vertikal oder als Block) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: block; /* Auf Mobilgeräten untereinander */
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* B. MAIN STYLING */
+main section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#hero {
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* C. FOOTER STYLING */
+footer {
+    background-color: #333;
+    background-image: linear-gradient(to right, #00A2DF, #0072B3);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVE ANPASSUNGEN (ab 768px Breite) --- */
+
+@media (min-width: 768px) {
+    
+    /* ANPASSUNG HEADER/NAVIGATION */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        text-align: left;
+        font-size: 2em; /* Größere Schrift auf Desktops */
+    }
+
+    /* Navigation horizontal ausrichten */
+    nav ul {
+        text-align: right;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block; /* Auf Desktops nebeneinander */
+        margin-left: 20px;
+    }
+}
+
+
+/* Styling für die Daten-Tabelle */
+.daten-tabelle {
+    width: 100%;
+    /* Entfernt den doppelten Rahmen */
+    border-collapse: collapse; 
+    margin: 20px 0;
+}
+
+/* Stil für alle Tabellenzellen */
+.daten-tabelle td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* Vertikale Ausrichtung an der Oberkante */
+    vertical-align: top; 
+}
+
+/* Stil für die erste Spalte (die Bezeichnungen) */
+.daten-tabelle tr td:first-child {
+    /* Setzt die Breite der linken Spalte auf 50% */
+    width: 50%;
+    font-weight: bold;
+    background-color: #f9f9f9; /* Leichter Hintergrund zur besseren Abgrenzung */
+}
+
+/* Stil für die zweite Spalte (die leeren Werte) */
+.daten-tabelle tr td:last-child {
+    /* Setzt die Breite der rechten Spalte auf 50% */
+    width: 50%;
+}
