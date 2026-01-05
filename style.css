@@ -35,6 +35,18 @@ header h1 {
     text-align: center;
 }
 
+
+.header-content {
+    display: flex;
+    align-items: center; /* Zentriert Bild und Text vertikal zueinander */
+    gap: 15px;           /* Abstand zwischen Bild und Text */
+}
+
+.header-logo {
+    height: 75px;        /* Pass die Größe deines Bildes hier an */
+    width: auto;
+}
+
 /* Navigation (Standard: vertikal oder als Block) */
 nav ul {
     list-style: none;
