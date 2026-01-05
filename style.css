@@ -99,6 +99,12 @@ main section {
     margin-top: 15px;
 }
 
+
+#content .container {
+    text-align: left;
+    padding: 10px 20px;
+}
+
 /* C. DATEN-TABELLE */
 .daten-tabelle {
     width: 100%;
@@ -111,19 +117,27 @@ main section {
     padding: 12px 8px; /* Etwas mehr Klickfläche */
     border: 1px solid #ccc;
     vertical-align: top; 
-    word-wrap: break-word; /* Verhindert, dass Text aus der Zelle ragt */
+    word-wrap:break-word ; /* Verhindert, dass Text aus der Zelle ragt */
 }
 
 .daten-tabelle tr td:first-child {
-    width: 45%; /* Etwas flexibler als 50/50 */
+    width: 25%; /* Etwas flexibler als 50/50 */
     font-weight: bold;
     background-color: #f9f9f9;
 }
 
 .daten-tabelle tr td:last-child {
-    width: 55%;
+    width: 75%;
+    
+}
+#content .container {
+    padding: 10px 20px;
+    text-align: center;
 }
 
+#content .container p {
+    
+}
 /* D. FOOTER STYLING */
 footer {
     background-color: #333;
@@ -157,6 +171,18 @@ footer a {
         border-left: none;  /* Wirkt moderner auf schmalen Screens */
         border-right: none;
     }
+
+    .daten-tabelle tr td:last-child {
+    width: 75%;
+    text-align: left;
+    font-size: small;
+    
+}
+    .daten-tabelle tr td:first-child {
+    font-size: small;
+}
+
+    
 }
 
 /* Desktop-Spezifisch (ab 768px) */
